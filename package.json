@@ -2,11 +2,11 @@
   "name": "mishka",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dmitry",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.1",
@@ -15,6 +15,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "sass": "^1.60.0"
+    "sass": "^1.61.0"
   }
 }
