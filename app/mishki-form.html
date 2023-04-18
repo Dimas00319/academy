@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Mishka-form</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav--wrapper">
+          <img class="nav__logo logo" src="/imajes/jpg/mishka-logo-mobile.svg copy.png" alt="Мишка">
+          <button class="main-nav__togle" type="button">Открыть меню</button>
+          <ul class="nav__list site-list">
+            <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="#">Вязание на заказ</a><img class="nav__list-logo logo" src="/imajes/jpg/mishka-logo-desktop.svg.png" alt="Мишка"></li>
+            <li class="site-list__item"><label>
+              <span class="search__logo"></span>
+              <input class="search" type="search" placeholder="Поиск по сайту">
+            </label></li>
+            <li class="site-list__item">
+              <label><span class="basket__logo"></span>Корзина:
+              <input class="basket__input" type="number" placeholder="пока пуста" readonly></label>
+            </li>
+            <li class="section-list__item"><a href="#">Новые поступления</a></li>
+            <li class="section-list__item"><a href="#">Распродажа</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="section__previu">
+      <div class="section--wrapper">
+        <span class="section__info">Бесплатная доставка по России</span>
+        <h1 class="section__title">Вязание на заказ</h1>
+      </div>
+    </section>
+    <main class="main">
+      <div class="main__wrapper">
+        <p class="main__content previu">
+          Мы будем рады воплотить в жизнь ваши пожелания!
+          Заполните простую форму заказа и мы свяжемся с вами,
+          чтобы уточнить детали.
+        </p>
+        <form class="form main__form" action="#">
+          <fieldset class="form__title">
+            <legend>Тип<span class="form__line"></span></legend>
+            <ul class="form__list">
+              <li class="form__list__item"><label><input name="radio__btn" type="radio">Аксессуар для интерьера</label></li>
+              <li class="form__list__item"><label><input name="radio__btn" type="radio">Детская игрушка</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__title">
+            <legend> Цвет <span class="form__line"></span></legend>
+            <ul class="form__list">
+              <li class="form__list__item"><label><input type="checkbox">Белый</label></li>
+              <li class="form__list__item"><label><input type="checkbox">Серый</label></li>
+              <li class="form__list__item"><label><input type="checkbox">Тиффани</label></li>
+              <li class="form__list__item"><label><input type="checkbox">Черный</label></li>
+              <li class="form__list__item"><label><input type="checkbox">Розовый</label></li>
+              <li class="form__list__item"><label><input type="checkbox">Оранжевый</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__title">
+            <legend>ФИО<span class="form__line"></span></legend>
+            <ul class="contacts contacts__list">
+              <li class="contacts__list__item"><label class="label__form">Имя:<input type="text" placeholder="Введите ваше имя*" required></label></li>
+              <li class="contacts__list__item"><label class="label__form">Фамилия:<input type="text" placeholder="Укажите фамилию*" required></label></li>
+              <li class="contacts__list__item"><label class="label__form">Очество:<input type="text" placeholder="Очество если желаете"></label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__title">
+            <legend>Тел <span class="form__line"></span></legend>
+          <label><input type="tel" placeholder="+7 XXX XX XX*" required><span class="form__input--icon-tel"></span></label></fieldset>
+          <fieldset class="form__title">
+            <legend>E-MAIL<span class="form__line"></span></legend>
+          <label><input type="email" placeholder="Ваш Email*" required><span class="form__input--icon-sms"></span></label></fieldset>
+          <fieldset class="form__title">
+            <legend>ДОП <span class="form__line"></span></legend>
+          <textarea cols="19" rows="5" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+        <p class="form__text">*Поля обязательно для заполнения</p>
+        <button class="button form__button" type="button">Отправить заказ</button>
+        </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer--wrapper">
+        <img src="/imajes/jpg/logo-footer.svg.png" alt="Мишки">
+        <h2 class="visualy-hiden">Как с нами связаться</h2>
+        <ul class="footer__list">
+          <li class="footer__list__item"><a href="#"><img src="/imajes/jpg/insta.svg.png" alt="Инстаграмм"></a></li>
+          <li class="footer__list__item"><a href="#"><img src="/imajes/jpg/fb.svg.png" alt="Фейсбук"></a></li>
+          <li class="footer__list__item"><a href="#"><img src="/imajes/jpg/twitter.svg.png" alt="Twitter"></a></li>
+        </ul>
+      </div>
+      <div class="footer__copyring copyring">
+        <b class="copyring__text">Разработано</b>
+        <a href="#">
+        <img class="copyring__logo" src="/imajes/jpg/htmlacademy.svg.png" alt="сайт академии"></a>
+      </div>
+    </footer>
+  </body>
+</html>
